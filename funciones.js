@@ -15,6 +15,7 @@ class Persona {
 const persona1 = new Persona('Lautaro', 28);
 
 
+
 console.log(persona1.nombre);
 console.log(persona1.edad);
 persona1.saludar();
