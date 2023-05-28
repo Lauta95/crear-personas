@@ -6,17 +6,18 @@ class Persona {
     }
 
     saludar() {
-        console.log (`El nombre de la persona es ${this.nombre} y su edad es ${this.edad}`);
+        return (`El nombre de la persona es ${this.nombre} y su edad es ${this.edad}`);
     }
 }
 
 const persona1 = new Persona('Lautaro', 28);
 const persona2 = new Persona('Germán', 50);
 
+let personaMostrar = persona1.saludar();
 
 function boton() {
     let x = document.createElement("p");
-    let t = document.createTextNode(`hola ${persona1}`)
+    let t = document.createTextNode(`hola ${personaMostrar}`)
     x.appendChild(t);
     document.body.appendChild(x)
 
