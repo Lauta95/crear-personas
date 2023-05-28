@@ -1,5 +1,3 @@
-let btn_1 = document.getElementById('btn_1')
-const display = document.getElementById('display')
 
 class Persona {
     constructor(nombre, edad) {
@@ -12,10 +10,17 @@ class Persona {
     }
 }
 
+function boton() {
+    
+}
+
 const persona1 = new Persona('Lautaro', 28);
+const persona2 = new Persona('Germán', 50);
 
+console.log(persona1.nombre, persona1.edad);
+console.log(persona2.nombre, persona2.edad);
 
+console.log('----------------------------');
 
-console.log(persona1.nombre);
-console.log(persona1.edad);
 persona1.saludar();
+persona2.saludar();
