@@ -11,7 +11,12 @@ class Persona {
 }
 
 function boton() {
-    
+    let x = document.createElement("p");
+    let t = document.createTextNode(`${persona1.saludar()}`)
+    x.appendChild(t);
+    document.body.appendChild(x)
+    persona1.saludar();
+    persona2.saludar();
 }
 
 const persona1 = new Persona('Lautaro', 28);
@@ -22,5 +27,4 @@ console.log(persona2.nombre, persona2.edad);
 
 console.log('----------------------------');
 
-persona1.saludar();
-persona2.saludar();
+
