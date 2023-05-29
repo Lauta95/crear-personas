@@ -13,9 +13,13 @@ function boton() {
     let valor = input1.value;
     let valor2 = input2.value;
     const persona3 = new Persona(valor, valor2)
+    let personaJSON = JSON.stringify(persona3);
+    localStorage.setItem("persona", personaJSON)
     let personaMostrarDOM = persona3.saludar()
     let x = document.createElement("p");
     let t = document.createTextNode(`hola -> ${personaMostrarDOM}`)
     x.appendChild(t);
     document.body.appendChild(x)
 }
+
+localStorage.setItem('STRING', 2);
